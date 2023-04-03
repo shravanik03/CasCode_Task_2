@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bgg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+form {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border: 1px solid black;
+    max-width: 60vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2rem;
+}
+
+.head p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#line {
+    margin-top: 1rem;
+    background-color: grey;
+    height: 1px;
+    border: none;
+}
+
+.details {
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details label {
+    font-size: 1.2em;
+}
+/*Row 1*/
+.row-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.row-1 div {
+    flex: 1 1 0;
+    width: 0;
+}
+#fname,#lname,#date{
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color:black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+#date{
+    width: 88%;
+}
+/*Row 2*/
+.row-2 {
+    display: flex;
+}
+.user-email{
+    flex-basis: 89%;
+}
+#email,#phone{
+    width: 90.46%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color:black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+/*Row 3*/
+#street,#street2{
+    width: 97%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color:black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+#street2{
+    margin-top: 0px;
+}
+
+/*Row 4*/
+.user-living{
+    display: flex;
+    
+}
+
+.user-living div {
+    flex: 1 1 0;
+    width: 0;
+}
+
+#city,#state{
+    width: 86%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color:black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+.user-state{
+    margin-left: 4rem;
+}
+#pin{
+    width: 40%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color:black;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+.prefer-contact{
+    margin-top: 8px;
+}
+
+.form-control {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    margin-top: 15px;
+    font-weight:normal;
+}
+.last-row{
+    display: flex;
+    margin-top: 20px;
+}
+.last-row div {
+    flex: 1 1 0;
+    width: 0;
+}
+#age{
+    width: 85%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color:black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+#gender{
+    width: 88.5%;
+    height: 4.8vh;
+    padding: 8px;
+    font-size: 1rem;
+    color:black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+.user-gender{
+    margin-left: 4rem;
+}
+
+.medical {
+    padding: 15px 60px;
+}
+
+.medical label {
+    font-size: 1.2em;
+}
+
+.med-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+textarea {
+    width: 98.5%;
+    height: 125px;
+    position: relative;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+
+.bmi {
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bmi label {
+    font-size: 1.2em;
+}
+
+.bmi label i {
+    font-size: 1rem;
+}
+
+.bmi-1 {
+    width: 96.5%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+
+
+.exercise {
+    padding: 15px 60px;
+}
+
+.exercise label {
+    font-size: 1.2em;
+}
+
+.exercise #exercise-time {
+    width: 96.5%;
+    height: 2vh;
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+
+.exercise .rate {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span {
+    color: rgb(227, 37, 37);
+    font-size: medium;
+    visibility: hidden;
+}
+
+span::before {
+    content: '*';
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    gap: 5px;
+}
+
+.btn {
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn button {
+    margin: auto;
+    cursor: pointer;
+    width: 28.5%;
+    height: 3em;
+    position: relative;
+    font-size: 1em;
+    top: 11px;
+    background-color: rgb(18, 219, 78);
+    border: none;
+    color: rgb(244, 242, 242);
+    
+}
+
+.user-email,
+.user-phone,
+.user-name,
+.user-address,
+.user-city,
+.user-state,
+.user-pincode,
+.user-age,
+.bmi-label,
+.exercise {
+    position: relative;
+}
+
+.email-icon {
+    color: black;
+    position: absolute;
+    right: 7.2%;
+    top: 53%;
+}
+
+.phone-icon {
+    color: black;
+    position: absolute;
+    left: 89%;
+    bottom: 30%;
+}
+
+.lname-icon {
+    color: cyan;
+    position: absolute;
+    right: 45%;
+    top:24.5%;
+}
+
+.fname-icon {
+    color: cyan;
+    position: absolute;
+    bottom: 73.5%;
+    left: 36.5%;
+}
+
+.street-icon {
+    color: black;
+    position: absolute;
+    right: 2%;
+    top: 53%;
+}
+
+.city-icon {
+    color: black;
+    position: absolute;
+    right: 11%;
+    top: 36%;
+}
+
+.state-icon {
+    color: black;
+    position: absolute;
+    left: 85%;
+    bottom: 40%;
+}
+
+.pin-icon {
+    color: black;
+    position: absolute;
+    right: 58%;
+    top: 20%;
+}
+
+.age-icon {
+    color: black;
+    position: absolute;
+    right: 11%;
+    top: 53%;
+}
+
+.bmi-icon {
+    color: black;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+.ex-icon {
+    color: black;
+    position: absolute;
+    left: 89.7%;
+    bottom: 93%;
+}
+
+i {
+    visibility: hidden;
+}
+
+.success i.fa-circle-check {
+    visibility: visible;
+    color: rgb(27, 194, 27);
+}
+
+.error i.fa-circle-exclamation {
+    visibility: visible;
+    color: red;
+}
+
+.error span {
+    visibility: visible;
+}
+
+.message-error span {
+    visibility: visible;
+}
